@@ -4,15 +4,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 /**
 * Hello world!
 */
-@RestController
+@Controller
 public class HelloController
 {
     @RequestMapping("/")
-    public String index() {
-        return "Hello, Spring Boot!";
-    }
-    @RequestMapping("/miyagi")
-    public String miyagi() {
-        return "Miyagi desu!";
+    public String index(Model model) {
+        //return "this is Spring Boot sample";
+        return "index";
     }
 }
